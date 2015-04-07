@@ -33,6 +33,7 @@ public class GUISIBDI extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         barraMenu = new javax.swing.JMenuBar();
         jmArchivo = new javax.swing.JMenu();
         jmiSalir = new javax.swing.JMenuItem();
@@ -47,6 +48,8 @@ public class GUISIBDI extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Liberation Serif", 3, 24)); // NOI18N
         jLabel1.setText("Sistema de Biblioteca SIBDI");
+
+        jLabel2.setText("jLabel2");
 
         jmArchivo.setText("Archivo");
 
@@ -99,8 +102,13 @@ public class GUISIBDI extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(42, 42, 42)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(42, 42, 42)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(126, 126, 126)
+                        .addComponent(jLabel2)))
                 .addContainerGap(54, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -108,7 +116,9 @@ public class GUISIBDI extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(214, Short.MAX_VALUE))
+                .addGap(65, 65, 65)
+                .addComponent(jLabel2)
+                .addContainerGap(131, Short.MAX_VALUE))
         );
 
         pack();
@@ -164,6 +174,7 @@ public class GUISIBDI extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuBar barraMenu;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jmArchivo;
     private javax.swing.JMenu jmRegistro;
